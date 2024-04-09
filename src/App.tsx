@@ -1,4 +1,3 @@
-import "./App.css";
 import Education from "./components/education";
 import ProfileOverview from "./components/profileOverview";
 import Projects from "./components/projects";
