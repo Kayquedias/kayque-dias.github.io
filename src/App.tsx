@@ -17,8 +17,8 @@ function App() {
 
   return (
     <>
-      <div className="bg-[#fafafa] ">
-        <div className=" mx-auto max-w-[1100px] ">
+      <div className="bg-[#fafafa]">
+        <div className="mx-auto max-w-[1100px]">
           <div className="md:flex gap-4 flex-wrap h-full">
             <div className="flex-1">
               <ProfileOverview />
