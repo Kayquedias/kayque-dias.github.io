@@ -3,38 +3,23 @@ export default function AboutMe() {
   return (
     <div className="px-5 py-4 shadow-md my-2 bg-white">
       <div className="mb-2">
-        <h1 className="font-bold text-xl">About Me</h1>
+        <h1 className="font-bold text-xl">Sobre mim</h1>
       </div>
 
       <div className="text-[#222] space-y-2">
         <p>
-          👋 Hi there! I'm Isaac Katongole a passionate and result-driven
-          frontend developer with expertise in Reactjs, Nextjs for 4 years and I
-          love working on projects from scratch. I love what i do.
-        </p>
-
-        <p>
-          So far, with 4 years of experience, I have managed to improve on my
-          coding skills from the way i structure the projects, using version
-          controls like git to manage code branches, integrating third party
-          services, deploying on hosting platform, working with databases,
-          dockerizing application.
+          👋 Olá! Me chamo Kayque e meu primeiro contato com programação foi aos 15 anos, uma pequena introdução vem logo a seguir.<br/>
         </p>
         <p>
-          I have worked with a few teams (both local and remote) as frontend
-          developer mainly using reactjs for building user interfaces for
-          websites and web apps.
-        </p>
-
-        <p>
-          The side-hustles forced me to work on both frontend and backend to
-          survive otherwise I would end up with nothing. For the backend, I use
-          Nodejs my favorite.
+          Durante o ensino médio, formei uma equipe com colegas, participando de eventos e auxiliando na criação de sites. 
+          Além disso, também oferecíamos aulas para outros estudantes interessados em aprender programação.
         </p>
         <p>
-          Please don't hesitate to reach out, I may be the missing part in your
-          software developer team. I'm available to work with any team across
-          world.
+          Desde então, trabalhei com times de desenvolvimento em empresas, de forma remota e presencial. 
+          Sempre adquirindo mais conhecimentos de colegas de equipe, com disposição a ensinar também.
+        </p>
+        <p>
+          Agora, busco alcançar um nível maior na área de desenvolvimento, para então, alcançar maiores oportunidades.
         </p>
       </div>
     </div>

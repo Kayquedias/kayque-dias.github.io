@@ -9,15 +9,15 @@ import SkillIcon from "./skillIcon";
 import TextArt from "./common/textArt";
 
 export default function ProfileOverview() {
-  const getCurrentTimeInUganda = useCallback(
+  const getCurrentTimeInBrazil = useCallback(
     () => moment().tz("America/Fortaleza").format("hh:mm A z Z "),
     []
   );
 
-  const [time, setTime] = useState(getCurrentTimeInUganda());
+  const [time, setTime] = useState(getCurrentTimeInBrazil());
 
   useEffect(() => {
-    const _id = setInterval(() => setTime(getCurrentTimeInUganda()), 1000);
+    const _id = setInterval(() => setTime(getCurrentTimeInBrazil()), 1000);
     return () => clearInterval(_id);
   }, []);
 
