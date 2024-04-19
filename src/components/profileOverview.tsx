@@ -1,8 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 import { HiOutlineStatusOnline, HiBadgeCheck } from "react-icons/hi";
-import { FaGithub, FaLinkedin, FaDev } from "react-icons/fa";
-import { SiUpwork } from "react-icons/si";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdMail } from "react-icons/md";
 import moment from "moment-timezone";
 
@@ -12,7 +10,7 @@ import TextArt from "./common/textArt";
 
 export default function ProfileOverview() {
   const getCurrentTimeInUganda = useCallback(
-    () => moment().tz("Africa/Kampala").format("hh:mm A z Z "),
+    () => moment().tz("America/Fortaleza").format("hh:mm A z Z "),
     []
   );
 
@@ -40,18 +38,18 @@ export default function ProfileOverview() {
           <div className="">
             <div className="flex justify-between items-center">
               <div className="flex items-center gap-3">
-                <h1 className="text-2xl font-medium">Katongole Isaac</h1>
+                <h1 className="text-2xl font-medium">Kayque Dias</h1>
                 <SkillIcon icon={HiBadgeCheck} color="#0d6efd" size="30px" />
               </div>
               {/* <p className="font-bold">{currency}/year</p> */}
             </div>
 
-            <p>Frontend Developer - Reactjs | Nextjs | Typescript </p>
+            <p>Fullstack Developer - Reactjs | Nodejs | Typescript </p>
           </div>
 
           {/* Location */}
           <div className="text-xs my-2 flex gap-2 font-medium text-gray-500">
-            <p>Kampala, Central Division, Uganda</p>
+            <p>Eusébio, Ceará, Brasil</p>
             <p> - </p>
             <p>{time} </p>
           </div>
@@ -64,17 +62,11 @@ export default function ProfileOverview() {
           {/* Contact link */}
           <div className="my-4 ">
             <div className="flex gap-2">
-              <a href="https://github.com/katongole-isaac" target="_blank">
+              <a href="https://github.com/Kayquedias" target="_blank">
                 <SkillIcon icon={FaGithub} title="Github" />
               </a>
-              <a href="https://twitter.com/1katongoleisaac" target="_blank">
-                <SkillIcon icon={FaXTwitter} color="black" title="Twitter" />
-              </a>
-              <a href="https://dev.to/katongole_isaac" target="_blank">
-                <SkillIcon icon={FaDev} color="black" title="Dev.to" />
-              </a>
               <a
-                href="https://www.linkedin.com/in/katongole-isaac/"
+                href="https://www.linkedin.com/in/kayque-dias-363644214/"
                 target="_blank"
               >
                 <SkillIcon
@@ -83,16 +75,10 @@ export default function ProfileOverview() {
                   title="LinkedIn"
                 />
               </a>{" "}
-              <a
-                href="https://www.upwork.com/freelancers/~01ebfe65423c192588"
-                target="_blank"
-              >
-                <SkillIcon icon={SiUpwork} color="green" title="Upwork" />
-              </a>
-              <a href="mailto:katongolelsaac78@gmail.com">
+              <a href="mailto:kayquedias204@gmail.com">
                 <SkillIcon
                   icon={MdMail}
-                  className=" bg-clip-text  text-pink-950 bg-gradient-to-r from-pink-500 to-violet-500"
+                  className=" bg-clip-text text-pink-950 bg-gradient-to-r from-pink-500 to-violet-500"
                   title="GMail"
                 />
               </a>
@@ -111,7 +97,7 @@ const AvailiabilityBadge = () => {
         <HiOutlineStatusOnline color="#0d6efd" />
       </div>
       <div className="text-xs">
-        <p className="text-[#0d6efd] font-medium"> Available now</p>
+        <p className="text-[#0d6efd] font-medium">Available now</p>
       </div>
     </div>
   );
