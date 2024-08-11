@@ -5,7 +5,7 @@ export default function WorkExperience() {
   return (
     <div className="shadow-lg py-6 px-5 bg-white">
       <div className="my-2 mb-3">
-        <p className="font-semibold text-xl">Experience</p>
+        <p className="font-semibold text-xl">Experiência</p>
       </div>
       <div className=" space-y-6 ">
         {workExperienceData.map((exp, idx) => (

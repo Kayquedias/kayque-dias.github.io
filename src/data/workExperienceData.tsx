@@ -1,24 +1,23 @@
 import ImageIcon from "../components/common/imageIcon";
 import { IExperience } from "../components/experience";
-import MakLogo from "../assets/images/makerere_logo.jpeg";
-import PinniLogo from "../assets/images/pinnisoft_logo.jpg";
-import UpworkLogo from "../assets/images/upwork_logo.jpeg";
+import SalinasLogo from '../assets/images/salinas.png';
+import SDLogo from "../assets/images/sd-sobrancelhas.png";
 
 import {
-  BootStrapIcon,
-  ChakraIcon,
-  CssIcon,
+  AwsIcon,
   GitIcon,
-  HTMLIcon,
-  JavascriptIcon,
+  JestIcon,
+  NestJsIcon,
   NodejsIcon,
+  PythonIcon,
   ReactjsIcon,
+  StyledComponentsIcon,
   TailwindIcon,
   TypescriptIcon,
 } from "../components/icons";
-
-import { FaBuildingColumns } from "react-icons/fa6";
 import moment from "moment-timezone";
+import { FaDocker } from "react-icons/fa6";
+import { SiPostgresql } from "react-icons/si";
 
 const getMonths = (startDate: string, endDate?: string) => {
   const _endDate = endDate ? moment(endDate, "YYYYMMDD") : moment();
@@ -30,135 +29,79 @@ const workExperienceData: IExperience[] = [
   {
     company: {
       duration: "Full time",
-      location: "Mawanda Rd, Kamwokya,Kampala, Central UG",
-      name: "PinniSoft",
+      location: "Fortaleza, Ceará, Brasil",
+      name: "Salinas Empreendimentos",
     },
-    job: { title: "Web Frontend Developer - React", type: "On-site" },
+    job: { title: "Desenvolvedor FullStack", type: "Presencial" },
     duration: {
-      endDate: "Present",
-      startDate: "Nov 2023",
-      totalTime: `${getMonths("2023111")} mons`,
+      endDate: "Fev 2024",
+      startDate: "Jul 2023",
+      totalTime: `${getMonths("20230705", "20240202")} meses`,
     },
     description: [
-      <p className="">- Developed and maintained web apps using React.js.</p>,
+      <p>- Implementação de telas em ReactJs para o sistema de gestão de obras</p>,
       <p>
-        - Collaborated with cross-functional teams including designers, product
-        managers, and developers to create high-quality products.
+        - Implementação de rotas para o backend para o sistema de gestão de obras que é feito em NestJs com arquitetura de 
+        microsserviços com containers Docker para cada serviço.
       </p>,
       <p>
-        - Participated in code reviews, weekly meetings and provided
-        constructive feedback.
+        - Integração com AWS em serviços como: S3 e ECS
       </p>,
-      <p>- Integrated of third-party APIs as well as backend Restful APIs</p>,
+      <p>- Prototipação de telas com Figma antes do período de desenvolvimento</p>,
     ],
 
     skills: [
-      <NodejsIcon />,
+      <NestJsIcon />,
       <ReactjsIcon />,
-      <TypescriptIcon />,
-      <ChakraIcon />,
-      <GitIcon />,
-    ],
-    companyIcon: <ImageIcon src={PinniLogo} alt="Mak_logo" />,
-  },
-  {
-    company: {
-      duration: "Full time",
-      location: "Boca Raton, US",
-      name: "Upwork Client",
-    },
-    job: { title: "React Developer", type: "Remote" },
-    duration: {
-      startDate: "Aug 2023",
-      endDate: "Sept 2023",
-      totalTime: `${getMonths("20230801", "20230901")} mons`,
-    },
-    description: [
-      <p className="">
-        - Developed web map for data visualization about DMAs in US using
-        Keplergl
-      </p>,
-      <p>- Converted datasets to geojson data for visualization.</p>,
-      <p>
-        - Participated and contributed in code reviews and online meetings.
-      </p>,
-      <p>- Used Clickup for team work and tracking task progress.</p>,
-    ],
-
-    skills: [
-      <TypescriptIcon />,
-      <ReactjsIcon />,
-      <NodejsIcon />,
-      <GitIcon />,
       <TailwindIcon />,
+      <JestIcon />,
+      <TypescriptIcon />,
+      <PythonIcon />,
+      <AwsIcon />,
+      <SiPostgresql />
     ],
-    companyIcon: <ImageIcon src={UpworkLogo} alt="Mak_logo" />,
+    companyIcon: <ImageIcon src={SalinasLogo} alt="Salinas_logo" />,
   },
   {
     company: {
       duration: "Full time",
-      location: "Kampala, Central UG",
-      name: "Stratcom Telecom",
+      location: "Eusébio, BR",
+      name: "Grupo Sobrancelhas Design",
     },
-    job: { title: "Frontend Developer", type: "On-site" },
+    job: { title: "Desenvolvedor FullStack", type: "Remoto" },
     duration: {
-      startDate: "Feb 2021",
-      endDate: "OCt 2021",
-      totalTime: `${getMonths("20210201", "20211001")} mons`,
+      startDate: "Set 2022",
+      endDate: "Jul 2023",
+      totalTime: `${getMonths("20220910", "20230701")} meses`,
     },
     description: [
       <p className="">
-        - Transform Adobe PDF,Figma designs into working websites using Reactjs
-        & Typescript
+        - Desenvolvimento de sistema interno com autenticação externa utilizando Keycloak com arquitetura de
+        microsserviços (containers Docker).
       </p>,
-      <p>- Revamping existing websites to Reactjs</p>,
-      <p>- Optimizing initial page loads and improving SEO.</p>,
+      <p className="">
+        - Documentação técnica para usuário e time de desenvolvimento
+      </p>,
+      <p>- Integração entre Front e Backend com medidas de segurança para validação de dados utilizando um 
+        API Gateway, melhorando a comunicação dos serviços com um ponto de entrada.
+      </p>,
+      <p>
+        - Aumento de velocidade de comunicação com a criação da comunicação entre microsserviços de HTTP para GRPC 
+      </p>,
+      <p>- Youtrack para gerenciamento de tarefas e mensurar produção do time.</p>,
     ],
 
     skills: [
-      <ReactjsIcon />,
-      <NodejsIcon />,
       <TypescriptIcon />,
-      <BootStrapIcon />,
-      <GitIcon />,
-    ],
-    companyIcon: (
-      <FaBuildingColumns className="w-[56px] text-zinc-300 text-4xl" />
-    ),
-  },
-  {
-    company: {
-      duration: "Full time",
-      location: "Kampala, Central UG",
-      name: "Makerere AI Labs",
-    },
-    job: { title: "Junior Frontend Developer", type: "On-site" },
-    duration: {
-      startDate: "May 2020",
-      endDate: "Dec 2020",
-      totalTime: `${getMonths("20200501", "20201201")} mons`,
-    },
-    description: [
-      <p className="">- Built websites using HTML & CSS and Javascript.</p>,
-      <p>- Learnt developing UI components using reactjs.</p>,
-      <p>
-        - Learnt industry best practices suchas DRY, SOLID, Single
-        Responsibility, as well as project structing.
-      </p>,
-      <p>
-        - Learnt web hosting on platforms like vercel, heroku, and netlify.
-      </p>,
-    ],
-
-    skills: [
-      <HTMLIcon />,
-      <CssIcon />,
       <ReactjsIcon />,
-      <JavascriptIcon />,
-      <GitIcon />,
+      <FaDocker />,
+      <JestIcon />,
       <NodejsIcon />,
+      <GitIcon />,
+      <StyledComponentsIcon size={30} />,
+      <SiPostgresql />
     ],
-    companyIcon: <ImageIcon src={MakLogo} alt="Mak_logo" />,
+    companyIcon: <ImageIcon src={SDLogo} alt="SD_logo" />,
   },
 ];
 

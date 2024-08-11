@@ -7,7 +7,7 @@ type DurationType = "Full time" | "Part time";
 
 interface Props {
   companyIcon: React.ReactNode;
-  job: { title: string; type: "Remote" | "Freelance" | "On-site" };
+  job: { title: string; type: "Remoto" | "Presencial" };
   company: { name: string; duration: DurationType; location: string };
   duration: { startDate: string; endDate: string; totalTime: string };
   description: React.ReactNode[] | (() => ReactNode)[];
